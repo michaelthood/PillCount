@@ -16,8 +16,8 @@ Click yes to all.
 At the prompt in the blue command module at  c:\useres\Your Name\ 
 type 
 ./pc.ps1 
-return will run the program
-in the date to be entered use mm/dd/yyyy format.
+The return key will run the program.
+In the date to be entered, use mm/dd/yyyy format.
  Below is the code. #>
 
 @'
