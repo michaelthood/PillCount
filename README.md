@@ -6,7 +6,7 @@ prescriptions (dates that they can be filled).
 Another nicety would be different statements if the patient has more 
 meds that supposed to instead of negative numbers. I will do this next. 
  
-To implement code, in the search bar, type <ISE> and click on 
+To implement code, in the search bar, type ISE and click on 
 <Run as administrator>.
 This will bring up Powershell.  
 At the prompt type <Set-ExecutionPolicy remotesigned>
