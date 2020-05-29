@@ -1,11 +1,14 @@
 # PillCount
 <#Physician Assistan/nurse counts the patients controlled substances
-Purpose of program is to make sure the patiens pill count is correct
-next step and not yet programmed is to add dates that the next 3 prescriptions can be filled on
-another nicety would be different statements if the patient has more meds that supposed to
+Purpose of program is to make sure the patients pill count is correct
+next step and not yet programmed is to add dates for the next 3
+prescriptions that they can be filled
+another nicety would be different statements if the patient has more 
+meds that supposed to
 instead of negative numbers. I will do this next. 
  
-To implement code, in the search bar, type ISE and click on <Run as administrator>.
+To implement code, in the search bar, type ISE and click on 
+<Run as administrator>.
 This will bring up Powershell.  
 At the prompt type Set-ExecutionPolicy remotesigned
 Click yes to all.  
