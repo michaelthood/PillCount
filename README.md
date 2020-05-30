@@ -10,7 +10,7 @@ meds that supposed to instead of negative numbers. I will do this next.
 To implement code, in the search bar, type ISE and click on 
 Run as administrator.
 This will bring up Powershell.  
-At the prompt type <Set-ExecutionPolicy remotesigned>
+At the prompt type Set-ExecutionPolicy remotesigned
 Click yes to all.  
  In the View, click on script pane and Copy and paste
  code into Powershell script pane. Hit the green arrow to run the code.
