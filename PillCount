@@ -12,16 +12,26 @@ $DateFilledOnBottle = [system.datetime]$DateFilled
 
 
 $DateToLastUntill = $DateFilledOnBottle.AddDays(30)
-
+$Rxdate1 = $DateToLastUntill
+$Rxdate2 = $DateToLastUntill.AddDays(30)
+$Rxdate3 = $DateToLastUntill.AddDays(60)
 
 $SupposedToHaveDaysofpillsLeft =  $DateToLastUntill.DayOfYear - $TodaysDate.DayOfYear
 write-host "Supposed to have " $SupposedToHaveDaysofpillsLeft " days of pills left to last untill " $DateToLastUntill ".  "
 
 
 $ActuallyHasDaysofpillsLeft = $PillNum /$PillsTakenDaily
+$ActuallyHasDaysofpillsLeft = [Math]::ROUND($ActuallyHasDaysofpillsLeft,1)
 write-host "Actually has " $PillNum " pills left for "  $ActuallyHasDaysofpillsLeft " more days. "
 write-host "Supposed to have " ($SupposedToHaveDaysofpillsLeft * $PillsTakenDaily) " pills left to last "  $SupposedToHaveDaysofpillsLeft " more days.  "
 
 $PillDescrepancy = ($SupposedToHaveDaysofpillsLeft * $PillsTakenDaily) - $PillNum
+
 write-host "Deficit in pills = "  $PillDescrepancy ". "
+
+write-host "Rx Script #1 date " = $Rxdate1.Month "/" $Rxdate1.Day "/"$Rxdate1.Year  " on a " $Rxdate1.DayOfWeek
+
+write-host "Rx Script #2 date " = $Rxdate2.Month "/" $Rxdate2.Day "/"$Rxdate1.Year  " on a " $Rxdate2.DayOfWeek
+
+write-host "Rx Script #3 date " = $Rxdate3.Month "/" $Rxdate3.Day "/"$Rxdate3.Year  " on a " $Rxdate3.DayOfWeek
 '@ > pc.ps1
